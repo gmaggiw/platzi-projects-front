@@ -1,16 +1,25 @@
 import React, { Component } from 'react';
-import NavBarContainer from './components/layout/navbar/navbar.container';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import NavBarContainer from './components/navbar/navbar.container';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
+import HomeContainer from './components/home/home.container';
 
 class App extends Component {
   render() {
     return (
-      <div className="App container-fluid">
-        <NavBarContainer />
-      </div>
+      <Router>
+        <div className="container-fluid">
+          <NavBarContainer />
+          <Route
+            exact={true}
+            path="/"
+            component={HomeContainer}
+          />
+        </div>
+      </Router>
     );
   }
 }
