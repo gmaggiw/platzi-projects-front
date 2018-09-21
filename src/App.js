@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import NavBar from './components/layout/navbar/container/navbar';
+import NavBarContainer from './components/layout/navbar/navbar.container';
 import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App container-fluid">
-        <NavBar />
+        <NavBarContainer />
       </div>
     );
   }

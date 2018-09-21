@@ -1,28 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.container-fluid {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+
+
+#logo {
+    height: 35%;
+    width: 35%;
 }
 
-.App-title {
-  font-size: 1.5em;
+.nav-item {
+    font-weight: 500;
+    font-size: 86%;
+    color: whitesmoke;
 }
 
-.App-intro {
-  font-size: large;
+.fonts, [class*=" icon-"]:before, [class^=icon-]:before, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.new {
+    background-color: #7dcd40;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 80%;
+}
+
+.separator {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+
+
+@media (max-width: 576px) { 
+    .navbar-collapse, .ml-auto, .mx-auto {
+        background: rgb(28,54,67);
+        background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(30,83,113,1) 100%);
+        height: 52px;
+    }
+}
+
+.hero-project {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.form-control {
+    font-size: 0.8em !important;
+}
+
+
+
+.project-members {
+    background: #7dcd40 !important;
+    padding: 10px;
+    border-radius: 25px !important;
+    line-height: 3.1;
+}
+
+.projects-list li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.btn-rounded {
+    border-radius: 25px;
+}
+
+.fa-2x {
+    vertical-align: middle;
+}
+
+.side {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.side-header {
+    background-color: #005D88;
+    border-radius: 5px 5px 0px 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.562);
+    font-weight: 700;   
+}
+
+.side-header h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.side-header > .col-8 {
+    background-image: url(./assets/img/project-management-shadow.png);
+    background-repeat: no-repeat;
+    background-size: 12em;
+    background-position: 1em;
+    padding-top: 0.5em;
 }
