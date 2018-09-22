@@ -1,0 +1,7 @@
+.card {
+    border-radius: 0 !important;
+    height: 234px;
+    background-image: url("../../assets/img/hero.projects.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
